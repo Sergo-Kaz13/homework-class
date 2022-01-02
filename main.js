@@ -34,6 +34,8 @@ class DescribesTheCircle {
 // Продемонструй роботу властивостей і методів.
 const circle = new DescribesTheCircle(50);
 console.log('[circle.radius]', circle.radius);
+circle.radius = 20;
+console.log('[circle.radius]', circle.radius);
 console.log('[circle.diameter]', circle.diameter);
 console.log('[circle.carArea()', circle.carArea());
 console.log('[circle.circuit()', circle.circuit());
@@ -42,8 +44,17 @@ console.log('[circle.circuit()', circle.circuit());
 
 // Реалізуй клас, що описує канцелярський маркер. У класі повинні бути такі компоненти:
 
-// поле, яке зберігає колір маркера;
-// поле, яке зберігає кількість чорнил у маркері (у відсотках);
+class DescribesTheMarker {
+    // поле, яке зберігає колір маркера;
+    // поле, яке зберігає кількість чорнил у маркері (у відсотках);
+    constructor(color, numberInk) {
+        this.color = color;
+        this.numberInk = numberInk;
+    }
+
+    
+}
+
 // метод для вводу (приймає рядок і виводить текст відповідним кольором; текст виводиться до тих пір, поки в маркері є чорнило; один не пробільний символ — це 0,5% чорнил у маркері).
 // Реалізуй клас, що описує маркер, який можна перезаправляти. Успадкуй цей клас від простого маркера і додай метод для заправки.
 
